@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    background: rgb(113,178,56);
+    background: linear-gradient(90deg, rgba(113,178,56,1) 0%, rgba(165, 203, 69, 0.829) 25%, rgba(66,119,46,1) 100%);
+  }
+  
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6A8347;
+  }
+  
+  .fa-blender {
+    font-size: 2.1em;
+    margin: 5px 15px 5px 15px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+  }
+  
+  .fa-blender:hover {
+    color: greenyellow;
+  }
+  
+  ul.topnav li {
+    float: right;
+    font-family: 'Bangers', cursive;
+    font-size: 1.5em;
+  }
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #4CAF50;}
+  
+  ul.topnav li a.active {background-color: #4CAF50;}
+  
+  ul.topnav li.right {float: right;}
+
+  .about-img {
+      max-width: 100%;
+  }
+
+  .about-desc {
+      max-width: 70%;
+      margin: 20px auto;
+      font-family: 'Roboto Condensed';
+      font-size: 18px;
+  }
+
+  .map{
+      font-family: 'Roboto';
+      font-size: 24px;
+      margin: 25px auto 10px 15%;
+  }
+
+.facts {
+  background: #d3d3d359;
+}
+
+.facts-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+  
+.facts-list .li {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.fact {
+  font-family: Roboto;
+  font-size: 4vw;
+}
+.explanation {
+  font-family: 'Roboto Condensed';
+  font-size: 2vw;
+}
+
+  /*Google Maps*/
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 70%;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    height: 300px;
+    background-color: #6A8347;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .info {
+    
+    
+  }
+  
+  .social {
+    margin: 0;
+  }
+  
+  
+  
+  .social .fab {
+    padding: 15px;
+    font-size: 3em;
+  }
+  
+  .fa-facebook-square {
+    transition:transform .25s ease;
+  }
+  
+  .fa-facebook-square:hover{
+    transform:scale(1.5);
+    color: #405d9b;
+    
+  }
+  
+  .fa-instagram:hover{
+    transform:scale(1.5);
+    color: #a64c96;
+    
+  }
+  
+  .fa-pinterest:hover{
+    transform:scale(1.5);
+    color: #cc2127;
+    
+  }
+  /*napraviti boje linkova opet originalno*/
+  .footer .social a:visited {
+      color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }

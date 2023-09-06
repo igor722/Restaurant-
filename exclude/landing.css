@@ -1,0 +1,116 @@
+body {
+    background-color: #000;
+  }
+  
+  #landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+  }
+  
+  #landing-header h1 {
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+  }
+
+  /*#landing-header button {
+    background-color:background-color: rgba(0, 255, 0, 1);;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Questrial', sans-serif;
+  }*/
+
+  @ transition{
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -o-transition:0.4s;
+    -ms-transition:0.4s;
+    transition:0.4s;
+  }
+  
+  a{
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin:0 auto;
+    padding-top: 15px;
+    width:300px;
+    height: 50px;
+    list-style:none;
+    color:#FFF;
+    text-decoration:none;
+    border:3px solid white;
+    border-radius: 25px;
+    color:white;
+    display:inline-block;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-right:20px;
+    position:relative;
+  }
+  
+  
+  
+  .shadow:hover{
+    box-shadow: -5px -5px 5px 5px rgba(46, 228, 22, 0.2), 5px 5px 5px 5px rgba(46, 228, 22, 0.2)  !important;
+    border:3px solid rgba(46, 228, 22, 1);
+    color: rgba(46, 228, 22, 1);
+    @include transition;
+  }
+  
+  .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+  }
+  
+  
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+  
+  /* Older browser support */
+  .no-cssanimations .slideshow li {
+      opacity: 1;
+  }

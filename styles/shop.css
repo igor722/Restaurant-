@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background: rgb(113,178,56);
+    background: linear-gradient(90deg, rgba(113,178,56,1) 0%, rgba(165, 203, 69, 0.829) 25%, rgba(66,119,46,1) 100%);
+  }
+  
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6A8347;
+  }
+  
+  .fa-blender {
+    font-size: 2.1em;
+    margin: 5px 15px 5px 15px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+  }
+  
+  .fa-blender:hover {
+    color: greenyellow;
+  }
+  
+  ul.topnav li {
+    float: right;
+    font-family: 'Bangers', cursive;
+    font-size: 1.5em;
+  }
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #4CAF50;}
+  
+  ul.topnav li a.active {background-color: #4CAF50;}
+  
+  ul.topnav li.right {float: right;}
+
+  h1#head{
+    font-family: 'Bangers';
+    font-size: 68px;
+  }
+
+  .products {
+    max-width: 800px;
+    margin: 30px auto 30px auto;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .shop-item {
+    max-width: 200px;
+    padding: 0;
+    margin: 15px auto 25px auto;
+    display: inline-block;
+    border: 1px solid black;
+    font-family: Roboto;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-image {
+    max-width: 200px;
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
+  }
+
+
+  span.price {
+    font-weight: 800;
+    color: rgb(13, 98, 182);
+  }
+
+  .shop-item p {
+    font-family: 'Roboto Condensed';
+  }
+
+  .shop-item h3, .shop-item .price, .shop-item p {
+    margin: 5px;
+  }
+
+  footer {
+    height: 300px;
+    background-color: #6A8347;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .info {
+    
+    
+  }
+  
+  .social {
+    margin: 0;
+  }
+  
+  
+  
+  .social .fab {
+    padding: 15px;
+    font-size: 3em;
+  }
+
+  /*napraviti boje linkova opet originalno*/
+.footer .social a:visited {
+  color: black;
+}
+  
+  .fa-facebook-square {
+    transition:transform .25s ease;
+  }
+  
+  .fa-facebook-square:hover{
+    transform:scale(1.5);
+    color: #405d9b;
+    
+  }
+  
+  .fa-instagram:hover{
+    transform:scale(1.5);
+    color: #a64c96;
+    
+  }
+  
+  .fa-pinterest:hover{
+    transform:scale(1.5);
+    color: #cc2127;
+    
+  }
+  /*napraviti boje linkova opet originalno*/
+  .footer .social a:visited {
+      color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }

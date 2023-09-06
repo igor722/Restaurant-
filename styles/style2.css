@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  background: rgb(113,178,56);
+  background: linear-gradient(90deg, rgba(113,178,56,1) 0%, rgba(165, 203, 69, 0.829) 25%, rgba(66,119,46,1) 100%);
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6A8347;
+}
+
+.fa-blender {
+  font-size: 2.1em;
+  margin: 5px 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+}
+
+.fa-blender:hover {
+  color: greenyellow;
+}
+
+ul.topnav li {
+  float: right;
+  font-family: 'Bangers', cursive;
+  font-size: 1.5em;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #4CAF50;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+.container {
+  margin: 30px auto 30px auto;
+  width: 70%;
+  position: relative;
+  text-align: center;
+  color: white;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pineapple {
+  width: 100%;
+
+  
+}
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bangers', cursive;
+  font-size: 10vw;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {
+    float: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* SLIDER */
+.slide-img {
+  width: 100%;
+  max-height:353px;
+  animation: slider 1s linear;
+}
+
+#slider {
+  max-width: 70%;
+  max-height: 353px;
+  margin: 20px auto;
+  position: relative;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(30px);
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  width: auto;
+  margin-top: -22px;
+  height: 40px;
+  width: 40px;
+}
+
+.next {
+  /*border-radius: 10px 0px 0px 10px;*/
+  right: 10px;
+}
+
+.prew {
+  /*border-radius: 0px 10px 10px 0px;*/
+  left: 10px;
+}
+
+@keyframes slider{
+0%{opacity: .3; }
+100%{opacity: : 1; }
+}
+
+
+
+/*Google Maps*/
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 70%;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*Staff*/
+
+.staffwrapper {
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.staff {
+  justify-content: space-between;
+  display: flex;
+}
+
+.employee {
+  border: solid 1px black;
+  max-width: 300px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(165, 197, 85, 0.733);
+}
+
+.employeephoto {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-family: 'Roboto', cursive;
+  font-size: 24px;
+}
+
+.employeedesc {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size-adjust: 2vw;
+  padding: 3px;
+}
+
+footer {
+  height: 300px;
+  background-color: #6A8347;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info {
+  
+  
+}
+
+.social {
+  margin: 0;
+}
+
+
+
+.social .fab {
+  padding: 15px;
+  font-size: 3em;
+}
+
+.fa-facebook-square {
+  transition:transform .25s ease;
+}
+
+.fa-facebook-square:hover{
+  transform:scale(1.5);
+  color: #405d9b;
+  
+}
+
+.fa-instagram:hover{
+  transform:scale(1.5);
+  color: #a64c96;
+  
+}
+
+.fa-pinterest:hover{
+  transform:scale(1.5);
+  color: #cc2127;
+  
+}
+/*napraviti boje linkova opet originalno*/
+.footer .social a:visited {
+    color: black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+
+  .staff {
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  .employee {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
+
+  .staff {
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  .employee {
+    margin: 0 auto 30px auto;
+  }
+}
